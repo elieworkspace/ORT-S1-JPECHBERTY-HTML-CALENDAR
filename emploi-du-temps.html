@@ -1,11 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Emploi du temps</title>
     <link rel="stylesheet" href="css/tables.css">
 </head>
-<body>
+<style>
+    .m-0 {
+        margin: 0;
+    }
 
+    .mb-1 {
+        margin-bottom: 1rem;
+    }
+
+    .mb-2 {
+        margin-bottom: 2rem;
+    }
+
+    .mb-3 {
+        margin-bottom: 3rem;
+    }
+
+    .mb-4 {
+        margin-bottom: 4rem;
+    }
+
+    .mt-1 {
+        margin-top: 1rem;
+    }
+
+    .p-0 {
+        padding: 0;
+    }
+
+    .ml-1 {
+        margin-left: 1rem;
+    }
+
+    :root {
+        --bs-font: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+    }
+
+    html {
+        font-family: var(--bs-font);
+    }
+
+    small {
+        color: rgb(155, 155, 155);
+    }
+
+    p {
+        color: rgb(255 46 46)
+    }
+    .centrer {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+</style>
+
+<body style="background: #e9e9e9;">
+    <div class="mt-1 mb-2" style="text-align: center;">
+        <h1 class="m-0 p-0">Mon emploi du temps - LUNDI</h1>
+        <small>Classe 1TSIOALT - BTS SIO - Professeur principal : M. FOUJOLS, M. HAGEGE</small>
+
+    </div>
+   <div class="card"></div> 
+   <div class="centrer">
+    <table class="rounded">
+        <thead>
+            <th></th>
+            <th colspan="3">Lundi</th>
+            <th>Mardi</th>
+            <th colspan="3">Mercredi</th>
+            <th>Jeudi</th>
+            <th>Vendredi</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <th>8h30 - 9h30</th>
+                <th colspan="3"></th>
+                <th></th>
+                <th colspan="3"><!-- mercredi --></th>
+                <th rowspan="3">
+                    <h5 class="m-0 p-0 mb-1"><strong>CULT ECO JUR & MANA</strong></h5>
+                    <p class="m-0 p-0">Mme LOUIS-STOKOBER</p>
+                    <small>A204</small>
+                </th>
+                <th rowspan="5">
+                    <h5 class="m-0 p-0 mb-1 ml-1"><strong>ATELIER PROFESSIONALISTAION</strong></h5>
+                    <p class="m-0 p-0">M. PECHBERTY</p>
+                    <small>A204</small>
+                </th>
+            </tr>
+            <tr>
+                <th>9h30 - 10h20</th>
+                <th colspan="3"></th>
+                <th rowspan="2">
+                    <h5 class="m-0 p-0 mb-1 ml-1"><strong>SUPPORT 2</strong></h5>
+                    <p class="m-0 p-0">M. PECHBERTY</p>
+                    <small>A204</small>
+                </th>
+                <th  rowspan="3">
+                    <!-- mercredi -->
+                    <h5 class="m-0 p-0 mb-1"><strong>SUPPORT 1 : <u>S1P</u></strong></h5>
+                    <p class="m-0 p-0">M. HAGEGE</p>
+                    <small>A205</small>
+                </th>
+                <th  rowspan="3">
+                    <!-- mercredi -->
+                    <h5 class="m-0 p-0 mb-1"><strong>SISR1 : <u>S2P</u></strong></h5>
+                    <p class="m-0 p-0">M. HAGEGE</p>
+                    <small>A204</small>
+                </th>
+                <th  rowspan="3">
+                    <!-- mercredi -->
+                    <h5 class="m-0 p-0 mb-1"><strong>SLAM2 JAV <u>S2P</u></strong></h5>
+                    <p class="m-0 p-0">M. FOUJOLS</p>
+                    <small>A204</small>
+                </th>
+            </tr>
+            <tr>
+                <th>10h40 - 11h 30</th>
+                <th colspan="3" rowspan="2">
+                    <h5 class="m-0 p-0 mb-1 ml-1"><strong>CULT.GENE.EXPRESSIO</strong></h5>
+                    <p class="m-0 p-0">M. COLETTE</p>
+                    <small>A204</small>
+                </th>
+            </tr>
+            <tr>
+                <th>11h30 - 12h30</th>
+                <th>
+                    <h5 class="m-0 p-0 mb-1 ml-1"><strong>MATH APPROFONDIES</strong></h5>
+                    <p class="m-0 p-0">M. RONCEUX</p>
+                </th>
+                <!--  <th>
+                    <h5 class="m-0 p-0 mb-1"><strong>CULT.GENE.EXPRESSIO</strong></h5>
+                    <p class="m-0 p-0">M. COLETTE</p>
+                    <small>A204</small>
+                </th> -->
+                <th></th>
+            </tr>
+            <tr>
+                <th>12h30 - 13h30</th>
+                <th colspan="3"></th>
+                <th></th>
+                <th colspan="3"><!-- mercredi --></th>
+                <th rowspan="2">
+                    <h5 class="m-0 p-0 mb-1"><strong>CULT ECO JUR & MANA</strong></h5>
+                    <p class="m-0 p-0">Mme LOUIS-STOKOBER</p>
+                    <small>A204</small>
+                </th>
+            </tr>
+            <tr>
+                <th>13h30 - 14h30</th>
+                <th rowspan="4">
+                    SUPPORT 3 : <u>S1P</u>
+                    <p class="m-0 p-0">M. BUFFETEAU</p>
+                    <small>A204</small>
+
+
+                </th>
+                <th rowspan="4">
+                    SLAM WEB : <u>S2P</u>
+                    <p class="m-0 p-0">M. BUFFETEAU</p>
+                    <small>A204</small>
+
+                </th>
+                <th rowspan="4">
+                    SISR2 : <u>S2P</u>
+                    <p class="m-0 p-0">M. SISR</p>
+                    <small>A205</small>
+
+
+                </th>
+                <th rowspan="2">
+                    <h5 class="m-0 p-0 mb-1"><strong>ANGLAIS LV1</strong></h5>
+                    <p class="m-0 p-0">Mme HAUTVILLE</p>
+                    <small>A204</small>
+                </th>
+                <th colspan="3" rowspan="4">
+                    <!-- mercredi -->
+                    <h5 class="m-0 p-0 mb-1 ml-1"><strong>CYBERSECURITE</strong></h5>
+                    <p class="m-0 p-0">M. HAGEGE</p>
+                    <small>A205</small>
+                </th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>14h30 - 15h20</th>
+                <th>
+                    <h5 class="m-0 p-0 mb-1 ml-1"><strong>MATHEMATIQUES</strong></h5>
+                    <p class="m-0 p-0">M. RONCEUX</p>
+                    <small>A204</small>
+                </th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>15h40 - 16h30</th>
+                <th rowspan="3">
+                    <h5 class="m-0 p-0 mb-1"><strong>MATHEMATIQUES</strong></h5>
+                    <p class="m-0 p-0">M. RONCEUX</p>
+                    <small>A204</small>
+                </th>
+                <th>
+                    <h5 class="m-0 p-0 mb-1 ml-1"><strong>MATH APPROFONDIES</strong></h5>
+                    <p class="m-0 p-0">M. RONCEUX</p>
+                    <small>A204</small>
+                </th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>16h30 - 17h00</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>17h00 - 17h30</th>
+                <th colspan="3"></th>
+                <th colspan="3"></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>17h30 - 18h00</th>
+                <th colspan="3"></th>
+                <th></th>
+                <th colspan="3"></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>18h00 - 18h30</th>
+                <th colspan="3"></th>
+                <th></th>
+                <th colspan="3"></th>
+                <th></th>
+                <th></th>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+   </div>
 </body>
+
 </html>
